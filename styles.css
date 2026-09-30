@@ -132,3 +132,53 @@
  border-color:rgba(255,247,253,.32);
  box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 15px 38px rgba(69,48,79,.13);
 }
+
+/* Final contrast pass — richer pastel + stronger core message */
+.hero-action{
+ background:
+  radial-gradient(circle at 14% -30%,rgba(255,255,255,.30),transparent 40%),
+  radial-gradient(circle at 76% 15%,rgba(255,205,235,.42),transparent 44%),
+  linear-gradient(110deg,#aa89c2 0%,#9d7bb6 43%,#aa7f9f 100%);
+}
+.work-strip{
+ background:
+  radial-gradient(circle at 15% 0%,rgba(245,221,255,.55),transparent 35%),
+  radial-gradient(circle at 84% 5%,rgba(255,201,232,.46),transparent 36%),
+  linear-gradient(180deg,#9170aa 0%,#795e92 58%,#685773 100%);
+}
+.statement{
+ background:
+  radial-gradient(circle at 50% 15%,rgba(244,215,255,.34),transparent 34%),
+  radial-gradient(circle at 76% 42%,rgba(255,190,227,.24),transparent 37%),
+  linear-gradient(125deg,#665579 0%,#7b628f 46%,#6c586f 100%);
+}
+.statement .eyebrow{
+ color:#f4c8ff;
+ font-size:14px;
+ font-weight:800;
+ letter-spacing:.28em;
+ text-shadow:0 0 18px rgba(238,180,255,.52);
+}
+.statement h2{
+ font-size:clamp(52px,5.4vw,82px);
+ line-height:.94;
+ letter-spacing:-.055em;
+ max-width:920px;
+ margin-left:auto;
+ margin-right:auto;
+ text-shadow:0 5px 30px rgba(40,24,52,.30);
+}
+.statement .statement-sub{
+ font-size:clamp(18px,1.45vw,23px);
+ font-weight:500;
+ color:#f7eefa;
+ max-width:760px;
+ margin-left:auto;
+ margin-right:auto;
+ text-shadow:0 2px 18px rgba(49,29,61,.28);
+}
+@media(max-width:600px){
+ .statement .eyebrow{font-size:11px;letter-spacing:.22em}
+ .statement h2{font-size:clamp(43px,12vw,58px)}
+ .statement .statement-sub{font-size:17px;line-height:1.5}
+}
