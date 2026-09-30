@@ -53,3 +53,46 @@
 @media(max-width:600px){
  .work-flow{background:linear-gradient(155deg,#34253c 0%,#251c31 52%,#171520 100%)}
 }
+/* Softer pastel lower experience — brighter, airy, still premium */
+.hero-action{
+ background:
+  radial-gradient(circle at 12% 0%,rgba(235,211,255,.58),transparent 38%),
+  radial-gradient(circle at 76% 35%,rgba(255,203,231,.42),transparent 42%),
+  linear-gradient(110deg,#7b6690 0%,#725d86 42%,#74596f 100%);
+ border-top:1px solid rgba(255,235,250,.42);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 12px 45px rgba(91,61,111,.16);
+}
+.hero-action:after{
+ content:"";position:absolute;inset:0;pointer-events:none;
+ background:linear-gradient(105deg,rgba(255,255,255,.07),transparent 32%,rgba(255,216,239,.09) 68%,transparent);
+}
+.work-strip{
+ background:
+  radial-gradient(ellipse at 18% 4%,rgba(218,188,255,.30),transparent 34%),
+  radial-gradient(ellipse at 82% 2%,rgba(255,195,226,.24),transparent 32%),
+  linear-gradient(180deg,#3d304c 0%,#30283f 48%,#272334 100%);
+}
+.work-flow{
+ border-color:rgba(241,216,255,.38);
+ background:
+  radial-gradient(circle at 12% 50%,rgba(219,181,255,.16),transparent 26%),
+  radial-gradient(circle at 82% 45%,rgba(255,190,225,.12),transparent 28%),
+  linear-gradient(105deg,rgba(82,59,91,.90),rgba(77,58,91,.91) 50%,rgba(79,57,79,.91));
+ box-shadow:0 22px 60px rgba(31,18,43,.22),0 0 46px rgba(215,170,255,.12),inset 0 1px 0 rgba(255,255,255,.11);
+}
+.statement{
+ background:
+  radial-gradient(circle at 50% 28%,rgba(192,159,236,.26),transparent 30%),
+  radial-gradient(circle at 65% 46%,rgba(243,180,220,.12),transparent 34%),
+  linear-gradient(115deg,#191c2b 0%,#332b49 48%,#222337 100%);
+}
+.statement:before{
+ content:"";position:absolute;left:22%;right:22%;top:8%;height:240px;pointer-events:none;
+ background:radial-gradient(ellipse,rgba(207,174,255,.16),transparent 68%);filter:blur(22px);
+}
+.proof-card{
+ background:linear-gradient(145deg,rgba(91,78,111,.52),rgba(59,55,78,.55));
+ border-color:rgba(229,211,247,.20);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 14px 35px rgba(12,10,22,.12);
+ backdrop-filter:blur(8px);
+}
