@@ -60,3 +60,19 @@
  .phone-screen{height:auto;min-height:758px}
  .phone .chat-stream{height:auto;min-height:604px;overflow:visible}
 }
+
+/* Albyne receptionist */
+.contact-open{border:0;cursor:pointer;font:inherit}
+.albyne-launcher{position:fixed;right:22px;bottom:22px;z-index:30;display:flex;align-items:center;gap:9px;padding:7px 14px 7px 7px;border:0;border-radius:30px;background:#fff;color:#30283b;box-shadow:0 12px 35px #30234235;font:700 12px Manrope,sans-serif;cursor:pointer}
+.albyne-launcher img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+.albyne-assistant{position:fixed;right:22px;bottom:82px;z-index:40;width:min(370px,calc(100vw - 28px));height:540px;display:flex;flex-direction:column;border:1px solid #e6dff0;border-radius:24px;background:#f7f3f9;box-shadow:0 24px 70px #30234245;overflow:hidden;opacity:0;pointer-events:none;transform:translateY(14px) scale(.98);transition:.2s ease}
+.albyne-assistant.open{opacity:1;pointer-events:auto;transform:none}
+.albyne-assistant-head{display:flex;align-items:center;gap:10px;padding:13px 14px;background:linear-gradient(135deg,#806cff,#b979bd);color:#fff}
+.albyne-assistant-head img{width:42px;height:42px;border-radius:50%;object-fit:cover;background:#fff}
+.albyne-assistant-head div{flex:1}.albyne-assistant-head b{display:block;font-size:14px}.albyne-assistant-head small{font-size:10px;opacity:.86}
+.albyne-assistant-head button{border:0;background:transparent;color:#fff;font-size:25px;cursor:pointer}
+.albyne-assistant-chat{flex:1;overflow:auto;padding:16px 13px;background:#efeae2}
+.live-msg{width:fit-content;max-width:86%;margin-bottom:9px;padding:10px 12px;border-radius:9px;background:#fff;color:#111b21;font-size:13px;line-height:1.45;box-shadow:0 1px 1px #0b141a1f}
+.live-msg.user{margin-left:auto;background:#d9fdd3;border-radius:9px 9px 2px 9px}.live-msg.bot{border-radius:9px 9px 9px 2px}
+.albyne-assistant-form{display:flex;gap:8px;padding:10px;background:#f0f2f5}.albyne-assistant-form input{min-width:0;flex:1;border:0;outline:0;border-radius:22px;background:#fff;padding:11px 14px;font:500 13px Manrope,sans-serif}.albyne-assistant-form button{width:40px;height:40px;border:0;border-radius:50%;background:#806cff;color:#fff;cursor:pointer}
+@media(max-width:700px){.albyne-launcher{right:12px;bottom:12px}.albyne-assistant{right:7px;bottom:70px;width:calc(100vw - 14px);height:min(620px,calc(100dvh - 90px));border-radius:22px}}
