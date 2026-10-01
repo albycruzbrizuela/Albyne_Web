@@ -49,3 +49,14 @@
 .circuit-step.recorded,.circuit-step.done{background:linear-gradient(135deg,#f3fbf7,#f7f3ff);border-color:#b9ddcf}
 .circuit-step.recorded>span,.circuit-step.done>span{background:#dff3e9;color:#28775b}
 @media(max-width:700px){.circuit-step .step-result{font-size:11px}.circuit-step.recorded,.circuit-step.done{min-height:82px}}
+
+/* Full conversation phone: no hidden opening messages */
+.phone{height:auto;min-height:760px}
+.phone-screen{height:auto;min-height:738px}
+.phone .chat-stream{height:auto;min-height:584px;overflow:visible;flex:none}
+.phone-input{margin-top:auto}
+@media(max-width:700px){
+ .phone{height:auto;min-height:780px;width:min(370px,96vw)}
+ .phone-screen{height:auto;min-height:758px}
+ .phone .chat-stream{height:auto;min-height:604px;overflow:visible}
+}
