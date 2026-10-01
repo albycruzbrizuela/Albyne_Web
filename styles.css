@@ -24,3 +24,18 @@
 .phone-input span{flex:1;padding:9px 13px;border:1px solid #e4dfe9;border-radius:20px;color:#aaa3b0;font-size:9px}
 .phone-input b{width:32px;height:32px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#806cff,#b26dcc);color:#fff;font-size:12px}
 @media(max-width:700px){.phone-wrap{padding:4px 0 12px}.phone{width:min(350px,94vw);height:570px;border-radius:42px}.phone-screen{border-radius:34px}}
+
+/* WhatsApp-faithful customer chat: readable and only customer-visible messages */
+.phone-screen{background:#efeae2}
+.phone .chat-head{background:#075e54;border-bottom:0}
+.phone .chat-head b{color:#fff;font-size:14px}
+.phone .chat-head small{color:#d8eee9;font-size:10px}
+.phone .chat-head .avatar{background:#dfe5e7;color:#54656f}
+.phone .chat-stream{background-color:#efeae2;background-image:radial-gradient(circle at 20% 20%,rgba(255,255,255,.28),transparent 26%);padding:16px 12px}
+.phone .bubble{max-width:86%;padding:10px 12px;margin-bottom:9px;border-radius:8px 8px 8px 2px;background:#fff;color:#111b21;font-size:13px;line-height:1.42;box-shadow:0 1px 1px #0b141a1f}
+.phone .bubble.client{background:#d9fdd3;border-radius:8px 8px 2px 8px}
+.phone .bubble.audio{background:#d9fdd3;color:#111b21;border-radius:8px 8px 2px 8px}
+.phone-input{background:#f0f2f5}
+.phone-input span{background:#fff;border:0;color:#667781;font-size:12px}
+.phone-input b{background:#00a884}
+@media(max-width:700px){.phone .bubble{font-size:13px;line-height:1.45}.phone .chat-head b{font-size:14px}}
