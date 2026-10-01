@@ -42,3 +42,10 @@
 
 .phone .chat-head .avatar{overflow:hidden;padding:0;background:#e7ecec}
 .phone .chat-head .avatar img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+
+.circuit-step .step-result{display:none;margin-top:6px;color:#397b65;font-weight:700;line-height:1.4}
+.circuit-step.recorded .step-default,.circuit-step.done .step-default{display:none}
+.circuit-step.recorded .step-result,.circuit-step.done .step-result{display:block}
+.circuit-step.recorded,.circuit-step.done{background:linear-gradient(135deg,#f3fbf7,#f7f3ff);border-color:#b9ddcf}
+.circuit-step.recorded>span,.circuit-step.done>span{background:#dff3e9;color:#28775b}
+@media(max-width:700px){.circuit-step .step-result{font-size:11px}.circuit-step.recorded,.circuit-step.done{min-height:82px}}
