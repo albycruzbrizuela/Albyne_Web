@@ -39,3 +39,6 @@
 .phone-input span{background:#fff;border:0;color:#667781;font-size:12px}
 .phone-input b{background:#00a884}
 @media(max-width:700px){.phone .bubble{font-size:13px;line-height:1.45}.phone .chat-head b{font-size:14px}}
+
+.phone .chat-head .avatar{overflow:hidden;padding:0;background:#e7ecec}
+.phone .chat-head .avatar img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
